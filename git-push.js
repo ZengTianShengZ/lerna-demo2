@@ -72,10 +72,10 @@ program
     const scopeOptions = await commitScopeInquirer()
     const commitmsg = await commitMsgInquirer()
     execSync('git add .')
-    execSync(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`)
+    execSync(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`, {stdio : "inherit"})
     // console.log(r);
   });
 
-  
+
 
 program.parse(process.argv)
