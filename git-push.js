@@ -60,8 +60,8 @@ const commitMsgInquirer = async () => {
   })
 }
 
-const execCMD = (shell) => {
-  return spawn(shell, {stdio:'inherit', shell: true})
+const execSyncCMD = (shell) => {
+  return execSync(shell, {stdio:'inherit'})
 }
 
 program
@@ -71,8 +71,8 @@ program
     const typeOptions = await commitTypeInquirer()
     const scopeOptions = await commitScopeInquirer()
     const commitmsg = await commitMsgInquirer()
-    execSync('git add .')
-    execSync(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`, {stdio : "inherit"})
+    execSyncCMD('git add .')
+    execSyncCMD(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`)
     // console.log(r);
   });
 
