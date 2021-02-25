@@ -1,6 +1,6 @@
 {
   "hooks": {
-    "pre-commit": "pretty-quick --staged",
+    "pre-commit": "npx lerna run pretty-quick",
     "commit-msg": "commitlint -x @commitlint/config-conventional -e $GIT_PARAMS"
   }
 }
