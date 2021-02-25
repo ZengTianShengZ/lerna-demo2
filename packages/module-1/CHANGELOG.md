@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/ZengTianShengZ/lerna-demo2/compare/module-1@1.1.2...module-1@1.1.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* fdfdfd ([7d1dbbc](https://github.com/ZengTianShengZ/lerna-demo2/commit/7d1dbbc0c4f519b25e5f37b7d4084e1f168a128e))
+
+
+
+
+
 ## [1.1.2](https://github.com/ZengTianShengZ/lerna-demo2/compare/module-1@1.1.1...module-1@1.1.2) (2021-02-25)
 
 
