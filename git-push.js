@@ -1,6 +1,6 @@
 const { Command } = require('commander');
 const inquirer = require('inquirer')
-const { exec, spawn } = require('child_process');
+const { exec, spawn, execSync } = require('child_process');
 
 const program = new Command();
 
@@ -74,8 +74,8 @@ program
     console.log('===typeOptions==', typeOptions);
     console.log('===scopeOptions==', scopeOptions);
     console.log('===msg=2221=', commitmsg);
-    exec('git add .')
-    const r = execCMD(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`)
+    execSync('git add .')
+    execSync(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`)
     // console.log(r);
   });
 
