@@ -73,7 +73,7 @@ program
     const commitmsg = await commitMsgInquirer()
     console.log('===typeOptions==', typeOptions);
     console.log('===scopeOptions==', scopeOptions);
-    console.log('===msg=1=', commitmsg);
+    console.log('===msg=2221=', commitmsg);
     execCMD('git add .')
     execCMD(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`)
   });
