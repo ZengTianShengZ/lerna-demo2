@@ -76,7 +76,7 @@ program
     console.log('===msg=2221=', commitmsg);
     exec('git add .')
     const r = execCMD(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`)
-    console.log(r);
+    // console.log(r);
   });
 
 
