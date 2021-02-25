@@ -1,6 +1,6 @@
 const { Command } = require('commander');
 const inquirer = require('inquirer')
-const { spawn } = require('child_process');
+const { exec, spawn } = require('child_process');
 
 const program = new Command();
 
@@ -55,7 +55,7 @@ const commitMsgInquirer = async () => {
   return inquirer.prompt({
     type: 'input',
     name: 'msg',
-    message: 'Please fill in commit commit:',
+    message: 'Please fill in commit message:',
     validate: v => !!v
   })
 }
@@ -74,8 +74,9 @@ program
     console.log('===typeOptions==', typeOptions);
     console.log('===scopeOptions==', scopeOptions);
     console.log('===msg=2221=', commitmsg);
-    execCMD('git add .')
-    execCMD(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`)
+    exec('git add .')
+    const r = execCMD(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`)
+    console.log(r);
   });
 
 
