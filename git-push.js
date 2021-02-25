@@ -71,9 +71,6 @@ program
     const typeOptions = await commitTypeInquirer()
     const scopeOptions = await commitScopeInquirer()
     const commitmsg = await commitMsgInquirer()
-    console.log('===typeOptions==', typeOptions);
-    console.log('===scopeOptions==', scopeOptions);
-    console.log('===msg=2221=', commitmsg);
     execSync('git add .')
     execSync(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`)
     // console.log(r);
