@@ -1,0 +1,12 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "command": {
+    "publish": {
+      "ignoreChanges": ["**/*.md", "**/test/**"], 
+      "conventionalCommits": true
+    }
+  }
+}
