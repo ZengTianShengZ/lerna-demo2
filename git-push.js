@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { exec, spawn, execSync } = require('child_process');
+const { execSync } = require('child_process');
 const { Command } = require('commander');
 const inquirer = require('inquirer')
 
