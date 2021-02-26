@@ -83,7 +83,6 @@ program
     const commitmsg = await commitMsgInquirer()
     execSyncCMD('git add .')
     execSyncCMD(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`)
-    console.log(r);
   });
 
 
