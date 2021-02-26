@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "c": "git-cz",
-    "push": "node ./git-push.js push",
+    "push": "XXX=444 node ./git-push.js push",
+    "publish": "XXX=333 npx lerna publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
