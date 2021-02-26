@@ -5,6 +5,7 @@
   "version": "independent",
   "command": {
     "publish": {
+      "registry": "https://registry-npm.gaoding.com",
       "ignoreChanges": ["**/package.json", "**/*.md", "**/test/**"], 
       "conventionalCommits": true
     }

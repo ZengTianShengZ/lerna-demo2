@@ -1,5 +1,5 @@
 {
-  "name": "module-1",
+  "name": "@cnpm-test/lerna-module-1",
   "version": "1.8.3",
   "description": "> TODO: description",
   "author": "tiansheng <tiansheng@gaoding.com>",
@@ -23,5 +23,5 @@
   "bugs": {
     "url": "https://github.com/ZengTianShengZ/lerna-demo2/issues"
   },
-  "gitHead": "c646033a91d4bdd4378ef46acea4946335144356"
+  "gitHead": "7a0bcbc7d51dd792bdf338cff0e3ac30614e7cf4"
 }
