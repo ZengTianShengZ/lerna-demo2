@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/ZengTianShengZ/lerna-demo2/compare/module-1@1.3.0...module-1@1.7.0) (2021-02-26)
+
+
+### Features
+
+* **@ui/gd-antd:** 888 ([2b30505](https://github.com/ZengTianShengZ/lerna-demo2/commit/2b305052b1cf8ef2ace5dd135432c4ee70213f2e))
+
+
+
+
+
 # [1.6.0](https://github.com/ZengTianShengZ/lerna-demo2/compare/module-1@1.3.0...module-1@1.6.0) (2021-02-26)
 
 
