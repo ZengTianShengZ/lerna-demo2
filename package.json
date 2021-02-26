@@ -6,7 +6,7 @@
   "scripts": {
     "c": "git-cz",
     "push": "XXX=444 node ./git-push.js push",
-    "release": "XXX=333 npx lerna publish",
+    "release": "RELEASE=true npx lerna publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

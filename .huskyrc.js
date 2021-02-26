@@ -1,12 +1,12 @@
 
 
-console.log('===1===');
+const hooks = {}
 
-//     "commit-msg": "commitlint -e $GIT_PARAMS"
-console.log(process.env);
+if (!process.env.RELEASE) {
+  hooks['commit-msg'] = 'commitlint -e $GIT_PARAMS'
+} 
+
 module.exports = {
-  "hooks": {
-    "commit-msg": "commitlint -e $GIT_PARAMS"
-  }
+  hooks
 }
 
