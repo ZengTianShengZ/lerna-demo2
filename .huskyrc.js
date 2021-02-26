@@ -1,6 +1,9 @@
-{
+
+
+console.log('===1===');
+
+module.exports = {
   "hooks": {
-    "pre-commit": "npx lerna run pretty-quick",
     "commit-msg": "commitlint -e $GIT_PARAMS"
   }
 }
