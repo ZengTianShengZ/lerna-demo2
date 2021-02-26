@@ -13,6 +13,12 @@
   "files": [
     "lib"
   ],
+  "maintainers": [
+    {
+      "name": "tiansheng",
+      "email": "tiansheng@gaoding.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZengTianShengZ/lerna-demo2.git"
@@ -23,5 +29,5 @@
   "bugs": {
     "url": "https://github.com/ZengTianShengZ/lerna-demo2/issues"
   },
-  "gitHead": "7a0bcbc7d51dd792bdf338cff0e3ac30614e7cf4"
+  "gitHead": "05ca25919317afcc2114475df98a8da283bc03ca"
 }
