@@ -1,6 +1,6 @@
 {
   "name": "@cnpm-test/lerna-module-1",
-  "version": "1.9.1",
+  "version": "1.10.0",
   "description": "> TODO: description",
   "author": "tiansheng <tiansheng@gaoding.com>",
   "homepage": "https://github.com/ZengTianShengZ/lerna-demo2/tree/master/packages/module-1#readme",

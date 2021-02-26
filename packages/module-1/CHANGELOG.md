@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/ZengTianShengZ/lerna-demo2/compare/@cnpm-test/lerna-module-1@1.9.1...@cnpm-test/lerna-module-1@1.10.0) (2021-02-26)
+
+
+### Bug Fixes
+
+* **@cnpm-test/lerna-module-1:** dsdds ([41863bd](https://github.com/ZengTianShengZ/lerna-demo2/commit/41863bde528747ca008e2df20bbf265a90ed9538))
+
+
+### Features
+
+* **@cnpm-test/lerna-module-1:** 3323 ([aad87f1](https://github.com/ZengTianShengZ/lerna-demo2/commit/aad87f1e6c16bd603dedfbb02643546f04b41469))
+
+
+
+
+
 ## [1.9.1](https://github.com/ZengTianShengZ/lerna-demo2/compare/@cnpm-test/lerna-module-1@1.9.0...@cnpm-test/lerna-module-1@1.9.1) (2021-02-26)
 
 **Note:** Version bump only for package @cnpm-test/lerna-module-1
