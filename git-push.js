@@ -1,6 +1,7 @@
+const fs = require('fs')
+const { exec, spawn, execSync } = require('child_process');
 const { Command } = require('commander');
 const inquirer = require('inquirer')
-const { exec, spawn, execSync } = require('child_process');
 
 const program = new Command();
 
@@ -21,13 +22,22 @@ const commitType = () => {
   return types.map(type => ({name: type, value: type}))
 }
 
-const commitScope = () => {
-  const scopes = [
-    '@ui/gd-antd',
-    '@ui/gd-bu',
-    'website'
-  ]
-  return scopes.map(scope => ({name: scope, value: scope}))
+const commitScope = (path) => {
+  const names = []
+  function packageNames(path) {
+    const dirs = fs.readdirSync(path)
+    for (let i = 0; i < dirs.length; i++) {
+      const dir = dirs[i];
+      if (!fs.existsSync(`${path}/${dir}/package.json`)) {
+        packageNames(`${path}/${dir}`)
+      } else {
+        const {name} = require(`${path}/${dir}/package.json`)
+        names.push(name)
+      }
+    }
+  }
+  packageNames(path)
+  return names.map(scope => ({name: scope, value: scope}))
 }
 
 
@@ -45,7 +55,7 @@ const commitScopeInquirer = async () => {
   return inquirer.prompt({
     type: 'list',
     name: 'scope',
-    choices: commitScope(),
+    choices: commitScope('./packages'),
     message: 'Please pick a commit scope:',
     validate: v => !!v
   })
@@ -73,9 +83,8 @@ program
     const commitmsg = await commitMsgInquirer()
     execSyncCMD('git add .')
     execSyncCMD(`git commit -m '${typeOptions.type}(${scopeOptions.scope}): ${commitmsg.msg}'`)
-    // console.log(r);
+    console.log(r);
   });
-
 
 
 program.parse(process.argv)
