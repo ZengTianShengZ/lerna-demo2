@@ -6,7 +6,7 @@ console.log('===1===');
 console.log(process.env);
 module.exports = {
   "hooks": {
-    // "commit-msg": "commitlint"
+    "commit-msg": "commitlint -e $GIT_PARAMS"
   }
 }
 
